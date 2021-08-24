@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Constant {
+struct Constants {
     
     static var apiKey = "ywPDlP5OL-3KdqITxAkg6XwMmynQ1DsZyqSbQvu8F-StAhmihpztIJpRUE-XlIHn_oKigdXIOoRBA_oeGNdhQyeDYUtIErTAjEpqcAqgO04uom6VoMMhAlojCcQjYXYx"
     static var apiUrl = "https://api.yelp.com/v3/businesses/search"
