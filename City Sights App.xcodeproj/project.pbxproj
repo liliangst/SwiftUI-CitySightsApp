@@ -21,6 +21,7 @@
 		381E93EE26D55E2500B3BF73 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E93ED26D55E2500B3BF73 /* BusinessSection.swift */; };
 		381E93F026D587B300B3BF73 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E93EF26D587B300B3BF73 /* BusinessRow.swift */; };
 		381E93F326D6427700B3BF73 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E93F226D6427700B3BF73 /* BusinessDetail.swift */; };
+		381E93F626D6A47E00B3BF73 /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E93F526D6A47E00B3BF73 /* BusinessMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		381E93ED26D55E2500B3BF73 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
 		381E93EF26D587B300B3BF73 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 		381E93F226D6427700B3BF73 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		381E93F526D6A47E00B3BF73 /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				381E93C826D2B17500B3BF73 /* LaunchView.swift */,
 				381E93E426D552B800B3BF73 /* Home */,
+				381E93F426D6A45100B3BF73 /* Map */,
 				381E93E326D552B100B3BF73 /* Denied */,
 				381E93E226D552A500B3BF73 /* Onboarding */,
 			);
@@ -169,6 +172,14 @@
 				381E93F226D6427700B3BF73 /* BusinessDetail.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		381E93F426D6A45100B3BF73 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				381E93F526D6A47E00B3BF73 /* BusinessMap.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 				381E93F326D6427700B3BF73 /* BusinessDetail.swift in Sources */,
 				381E93DD26D52A6200B3BF73 /* BusinessSearch.swift in Sources */,
 				381E93EA26D5577400B3BF73 /* BusinessList.swift in Sources */,
+				381E93F626D6A47E00B3BF73 /* BusinessMap.swift in Sources */,
 				381E93EE26D55E2500B3BF73 /* BusinessSection.swift in Sources */,
 				381E93D926D3CD9B00B3BF73 /* ContentModel.swift in Sources */,
 				381E93E126D52D5C00B3BF73 /* Constants.swift in Sources */,

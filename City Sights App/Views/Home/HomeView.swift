@@ -26,7 +26,9 @@ struct HomeView: View {
                             Image(systemName: "mappin.and.ellipse")
                             Text("Landos")
                             Spacer()
-                            Text("Switch to Map view")
+                            Button("Switch to Map view") {
+                                self.isMapShowing = true
+                            }
                         }
                         Divider()
                         
@@ -37,7 +39,8 @@ struct HomeView: View {
                 }
                 else {
                     // Show map
-                    
+                    BusinessMap()
+                        .ignoresSafeArea()
                 }
             }
         }
