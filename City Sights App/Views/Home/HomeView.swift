@@ -39,15 +39,40 @@ struct HomeView: View {
                     .navigationBarHidden(true)
                 }
                 else {
-                    // Show map
-                    BusinessMap(selectedBusiness: $selectedBusiness)
-                        .ignoresSafeArea()
-                        .sheet(item: $selectedBusiness) { business in
+                    
+                    ZStack (alignment: .top) {
+                        
+                        // Show map
+                        BusinessMap(selectedBusiness: $selectedBusiness)
+                            .ignoresSafeArea()
+                            .sheet(item: $selectedBusiness) { business in
+                                
+                                // Create a business detail view instance
+                                // Pass in the selected business
+                                BusinessDetail(business: business)
+                            }
+                        
+                        // Rectangle overlay
+                        ZStack {
                             
-                            // Create a business detail view instance
-                            // Pass in the selected business
-                            BusinessDetail(business: business)
+                            Rectangle()
+                                .foregroundColor(.white)
+                                .cornerRadius(5)
+                                .frame(height: 48)
+                            
+                            HStack {
+                                Image(systemName: "mappin.and.ellipse")
+                                Text("Landos")
+                                Spacer()
+                                Button("Switch to list view") {
+                                    self.isMapShowing = false
+                                }
+                                
+                            }
+                            .padding()
                         }
+                        .padding()
+                    }
                 }
             }
         }
