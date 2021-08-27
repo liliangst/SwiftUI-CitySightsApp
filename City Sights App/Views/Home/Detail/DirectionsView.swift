@@ -28,6 +28,8 @@ struct DirectionsView: View {
                     Link("Open in Maps", destination: URL(string: "https://maps.apple.com/?ll=\(lat),\(long)&q=\(name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)")!)
                 }
             }
+            .padding()
+            
             // Directions map
             DirectionsMap(business: business)
         }

@@ -13,7 +13,7 @@ struct BusinessTitle: View {
     
     var body: some View {
         
-        VStack {
+        VStack (alignment: .leading) {
             // Business name
             Text(business.name!)
                 .font(.title2)
